@@ -1,6 +1,6 @@
 //ISR Rendering Technique
 
-export const revalidate = 20;
+export const revalidate = 10;
 
 export default async function MatchesPage() {
   console.log("🔄 MATCHES PAGE GENERATED:", new Date().toLocaleTimeString());

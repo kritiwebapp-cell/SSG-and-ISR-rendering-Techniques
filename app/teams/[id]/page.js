@@ -3,6 +3,7 @@
 //create dynamic routes and generate their pages statically at build time using generateStaticParams().
 
 export function generateStaticParams() {
+  
   return [
     {
       id: "india",

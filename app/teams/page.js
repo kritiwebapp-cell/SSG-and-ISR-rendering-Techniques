@@ -1,6 +1,7 @@
 
 //SSG rendering Technique
 
+import Link from "next/link";
 const teams = [
   {
     id: 1,
@@ -30,6 +31,9 @@ export default function Teams() {
       {teams.map((team) => (
         <div key={team.id}>
           <h2>{team.name}</h2>
+           <Link href={`/teams/${team.id}`}>
+              {team.name}
+            </Link>
           <p>Captain: {team.captain}</p>
           <p>Ranking: {team.ranking}</p>
         </div>
